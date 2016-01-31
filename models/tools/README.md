@@ -1,5 +1,5 @@
 This folder is a fork of https://github.com/OpenNetworkingFoundation/EAGLE-Open-Model-Profile-and-Tools/tree/UmlYangTools.
-Every modification made here is necessary short term for the 2. MWTN Poc and will be reported too the original project.
+Every modification made here, is necessary for the 2. MWTN Poc and will be reported to the original project.
 
 
 # UML to YANG Mapping Tool
