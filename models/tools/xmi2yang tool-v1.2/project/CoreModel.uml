@@ -6,13 +6,6 @@
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_Hg3wABizEeSh8KVgZCMyDw" name="CoreNetworkModule">
       <packagedElement xmi:type="uml:Package" xmi:id="_oGqi3FLNEeO75dO39GbF8Q" name="TypeDefinitions">
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_oGqjalLNEeO75dO39GbF8Q" name="OperationalState">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_oGqja1LNEeO75dO39GbF8Q" annotatedElement="_oGqjalLNEeO75dO39GbF8Q">
-            <body>OBSOLETE: The list of valid operational states for the connection.</body>
-          </ownedComment>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oGqjbFLNEeO75dO39GbF8Q" name="ENABLED"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oGqjbVLNEeO75dO39GbF8Q" name="DISABLED"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_oGqjf1LNEeO75dO39GbF8Q" name="OperType">
           <ownedComment xmi:type="uml:Comment" xmi:id="_oGqjgFLNEeO75dO39GbF8Q" annotatedElement="_oGqjf1LNEeO75dO39GbF8Q">
             <body>The operation type associated with the protection mechanism (either non-revertive or revertive).</body>
@@ -27,14 +20,6 @@
               <body>Traffic will be rerouted on failure and not on recovery of any particular route.</body>
             </ownedComment>
           </ownedLiteral>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_oGqjV1LNEeO75dO39GbF8Q" name="Directionality">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_oGqjWFLNEeO75dO39GbF8Q" annotatedElement="_oGqjV1LNEeO75dO39GbF8Q">
-            <body>OBSOLETE: The enumeration with the options for directionality of the termination point.</body>
-          </ownedComment>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oGqjWVLNEeO75dO39GbF8Q" name="SINK"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oGqjWlLNEeO75dO39GbF8Q" name="SOURCE"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oGqjW1LNEeO75dO39GbF8Q" name="BIDIRECTIONAL"/>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_P-Hp8MD4EeSoNOrYOfaryg" name="LayerProtocolName">
           <ownedComment xmi:type="uml:Comment" xmi:id="_cS4UwGXLEeWWhJGy6csBUQ" annotatedElement="_P-Hp8MD4EeSoNOrYOfaryg">
@@ -1016,8 +1001,6 @@ http://www.itu.int/rec/T-REC-X.731/en&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_Ty8uQGZ_EeWrX_JIGzXlSg" base_DataType="_DUU_sGZ_EeWrX_JIGzXlSg" base_Element="_DUU_sGZ_EeWrX_JIGzXlSg"/>
   <OpenModel_Profile:Preliminary xmi:id="_6JnecGaQEeWrX_JIGzXlSg" base_Association="_oGqnx1LNEeO75dO39GbF8Q" base_Element="_oGqnx1LNEeO75dO39GbF8Q"/>
   <OpenModel_Profile:Preliminary xmi:id="_FpsPYGaREeWrX_JIGzXlSg" base_StructuralFeature="_oGqnfFLNEeO75dO39GbF8Q" base_Element="_oGqnfFLNEeO75dO39GbF8Q"/>
-  <OpenModel_Profile:Obsolete xmi:id="_YQDCUGaYEeWrX_JIGzXlSg" base_DataType="_oGqjV1LNEeO75dO39GbF8Q" base_Element="_oGqjV1LNEeO75dO39GbF8Q"/>
-  <OpenModel_Profile:Obsolete xmi:id="_SpjEIGapEeWrX_JIGzXlSg" base_DataType="_oGqjalLNEeO75dO39GbF8Q" base_Element="_oGqjalLNEeO75dO39GbF8Q"/>
   <OpenModel_Profile:Experimental xmi:id="_jBcjMGb3EeWrX_JIGzXlSg" base_DataType="_c3Hu8Gb3EeWrX_JIGzXlSg" base_Element="_c3Hu8Gb3EeWrX_JIGzXlSg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_p2ZGsGeEEeWmgIwAIZlYKQ" base_StructuralFeature="_p2YfoGeEEeWmgIwAIZlYKQ"/>
   <OpenModel_Profile:Experimental xmi:id="_u1EAIGeEEeWmgIwAIZlYKQ" base_StructuralFeature="_p2YfoGeEEeWmgIwAIZlYKQ" base_Element="_p2YfoGeEEeWmgIwAIZlYKQ"/>
