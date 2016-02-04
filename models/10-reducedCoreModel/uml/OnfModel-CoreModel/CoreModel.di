@@ -6,6 +6,9 @@
         <children>
           <emfPageIdentifier href="CoreModel.notation#_FiPgoFaWEeOVGaP4lO41SQ"/>
         </children>
+        <children>
+          <emfPageIdentifier href="CoreModel.notation#_rnaq8Bi0EeSh8KVgZCMyDw"/>
+        </children>
       </children>
     </windows>
   </sashModel>
