@@ -1,25 +1,10 @@
 module CoreModel-CoreNetworkModule-TypeDefinitions {
     namespace 'urn:onf:CoreModel-CoreNetworkModule-TypeDefinitions';
     prefix CoreModel-CoreNetworkModule-TypeDefinitions;
-    typedef OperationalState {
-        status obselete;
-        type enumeration {
-            enum ENABLED;
-            enum DISABLED;
-        }
-    }
     typedef OperType {
         type enumeration {
             enum REVERTIVE;
             enum NON-REVERTIVE;
-        }
-    }
-    typedef Directionality {
-        status obselete;
-        type enumeration {
-            enum SINK;
-            enum SOURCE;
-            enum BIDIRECTIONAL;
         }
     }
     typedef LayerProtocolName {

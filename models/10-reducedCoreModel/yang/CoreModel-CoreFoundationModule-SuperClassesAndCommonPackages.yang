@@ -6,6 +6,7 @@ module CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
     }
     grouping Name {
         list nameList {
+key "globalClassRef";
             description "List of names.";
             config true;
             ordered-by system;
@@ -19,6 +20,7 @@ module CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
         uses Extension;
         uses CoreModel-CoreFoundationModule-StateModel:State_Pac;
         list localIdList {
+key "globalClassRef";
             description "An identifier that is unique in the context of some scope that is less than the global scope.
 
 (consider in the context of Identifier: A property of an entity/role with a value that is unique within an identifier space, where the identifier space is itself unique, and immutable. The identifier therefore represents the identity of the entity/role. An identifier carries no semantics with respect to the purpose of the entity.)";
@@ -39,7 +41,8 @@ module CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
         uses Extension;
         uses CoreModel-CoreFoundationModule-StateModel:State_Pac;
         list localIdList {
-            description "An identifier that is unique in the context of some scope that is less than the global scope.
+key "globalClassRef";
+           description "An identifier that is unique in the context of some scope that is less than the global scope.
 
 (consider in the context of Identifier: A property of an entity/role with a value that is unique within an identifier space, where the identifier space is itself unique, and immutable. The identifier therefore represents the identity of the entity/role. An identifier carries no semantics with respect to the purpose of the entity.)";
             config true;
@@ -50,6 +53,7 @@ module CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
     }
     grouping Label {
         list labelList {
+key "globalClassRef";
             description "List of labels.";
             config true;
             ordered-by system;
@@ -58,6 +62,7 @@ module CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
     }
     grouping Extension {
         list extensionList {
+key "globalClassRef";
             description "List of simple name-value extentions";
             config true;
             ordered-by system;

@@ -8,11 +8,13 @@ module CoreModel-CoreNetworkModule-ObjectClasses {
         prefix CoreModel-CoreNetworkModule-TypeDefinitions;
     }
     list NetworkControlDomain {
+        key 'uuid';
         status current;
         config true;
         ordered-by system;
         uses CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages:GlobalClass;
         list networkElementRefList {
+            key 'uuid';
             description "The network elements within the scope of the NCD where each NE is within one and only one domain.";
             config true;
             ordered-by system;
@@ -23,6 +25,7 @@ module CoreModel-CoreNetworkModule-ObjectClasses {
         status deprecated;
         uses CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages:GlobalClass;
         list ltpRefList {
+key "uuid";
             description "An NE has associated LTPs that are at its boundary.
 The NeEncompassesFd association occurs for FDs that are within the bounds of the NetworkElement definition such that the FD is bounded by LTPs, all of which are on the boundary of the NetworkElement or are within the NetworkElement. 
 An LTP can be independent of an NE.";
@@ -64,17 +67,18 @@ Note the cleint LTP association should provide all necessary detail hence this a
             description "References contained LTPs representing servers of this LTP in an inverse multiplexing configuration (e.g. VCAT).";
             ordered-by system;
             type leafref {
-                path '/NetworkElement/ltpRefList/undefined';
+                path '/NetworkControlDomain/networkElementRefList/ltpRefList/uuid';
             }
         }
         leaf-list clientLtpRefList {
             description "References contained LTPs representing client traffic of this LTP for normal cases of multiplexing.";
             ordered-by system;
             type leafref {
-                path '/NetworkElement/ltpRefList/undefined';
+                path '/NetworkControlDomain/networkElementRefList/ltpRefList/uuid';
             }
         }
         list lpList {
+key "layerProtocolName";
             description "Ordered list of LayerProtocols that this LTP is comprised of where the first entry in the list is the lowest server layer (e.g. physical)";
             config true;
             ordered-by system;
@@ -83,14 +87,14 @@ Note the cleint LTP association should provide all necessary detail hence this a
         }
         leaf connectedLtpRef {
             type leafref {
-                path '/NetworkElement/ltpRefList/undefined';
+                path '/NetworkControlDomain/networkElementRefList/ltpRefList/uuid';
             }
             description "Applicable in a simple context where two LTPs are associated via a non-adjustable enabled forwarding.
 Reduces clutter removing the need for two additional LTPs and an FC with a pair of FcPorts.";
         }
         leaf peerLtpRef {
             type leafref {
-                path '/NetworkElement/ltpRefList/undefined';
+                path '/NetworkControlDomain/networkElementRefList/ltpRefList/uuid';
             }
             description "References contained LTPs representing the reversal of orientation of flow where two LTPs are associated via a non-adjustable enabled forwarding and where the referenced LTP is fully dependent on the this LTP.";
         }
@@ -105,7 +109,7 @@ In many cases there is no associated physical port";
 The referencing LTP is the rovider of capability.";
             ordered-by system;
             type leafref {
-                path '/NetworkElement/ltpRefList/undefined';
+                path '/NetworkControlDomain/networkElementRefList/ltpRefList/uuid';
             }
         }
         leaf ltpDirection {
