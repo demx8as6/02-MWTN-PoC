@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="Simple-ObjectClasses"
+        xmlns="urn:ietf:params:xml:ns:yang:yin:1"
+        xmlns:Simple-ObjectClasses="urn:onf:Simple-ObjectClasses">
+  <namespace uri="urn:onf:Simple-ObjectClasses"/>
+  <prefix value="Simple-ObjectClasses"/>
+  <list name="TestObject">
+    <key value="uuid"/>
+    <config value="true"/>
+    <leaf name="uuid">
+      <type name="string"/>
+    </leaf>
+    <leaf name="TestAttribute1">
+      <type name="string"/>
+    </leaf>
+  </list>
+</module>
