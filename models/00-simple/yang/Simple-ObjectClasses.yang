@@ -1,8 +1,7 @@
 module Simple-ObjectClasses {
     namespace 'urn:onf:Simple-ObjectClasses';
     prefix Simple-ObjectClasses;
-    list TestObject {
-        key 'uuid';
+    container TestObject {
         config true;
         leaf uuid {
             type string;
