@@ -1,13 +1,13 @@
 module CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
-    namespace 'urn:onf:CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages';
+    namespace "urn:onf:CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages";
     prefix CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages;
     import CoreModel-CoreFoundationModule-StateModel {
         prefix CoreModel-CoreFoundationModule-StateModel;
     }
     grouping Name {
         list nameList {
-key "globalClassRef";
             description "List of names.";
+            key 'valueName';
             config true;
             ordered-by system;
             uses NameAndValue;
@@ -20,10 +20,10 @@ key "globalClassRef";
         uses Extension;
         uses CoreModel-CoreFoundationModule-StateModel:State_Pac;
         list localIdList {
-key "globalClassRef";
             description "An identifier that is unique in the context of some scope that is less than the global scope.
 
 (consider in the context of Identifier: A property of an entity/role with a value that is unique within an identifier space, where the identifier space is itself unique, and immutable. The identifier therefore represents the identity of the entity/role. An identifier carries no semantics with respect to the purpose of the entity.)";
+            key 'valueName';
             config true;
             ordered-by system;
             uses NameAndValue;
@@ -41,10 +41,10 @@ key "globalClassRef";
         uses Extension;
         uses CoreModel-CoreFoundationModule-StateModel:State_Pac;
         list localIdList {
-key "globalClassRef";
-           description "An identifier that is unique in the context of some scope that is less than the global scope.
+            description "An identifier that is unique in the context of some scope that is less than the global scope.
 
 (consider in the context of Identifier: A property of an entity/role with a value that is unique within an identifier space, where the identifier space is itself unique, and immutable. The identifier therefore represents the identity of the entity/role. An identifier carries no semantics with respect to the purpose of the entity.)";
+            key 'valueName';
             config true;
             ordered-by system;
             uses NameAndValue;
@@ -53,8 +53,8 @@ key "globalClassRef";
     }
     grouping Label {
         list labelList {
-key "globalClassRef";
             description "List of labels.";
+            key 'valueName';
             config true;
             ordered-by system;
             uses NameAndValue;
@@ -62,8 +62,8 @@ key "globalClassRef";
     }
     grouping Extension {
         list extensionList {
-key "globalClassRef";
             description "List of simple name-value extentions";
+            key 'valueName';
             config true;
             ordered-by system;
             uses NameAndValue;
