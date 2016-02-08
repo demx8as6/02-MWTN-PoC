@@ -133,7 +133,7 @@ Node.prototype.writeNode = function (layer) {
         if (this["max-elements"] == "*") {
             maxele = "";
         }
-        if (this.key&&!this.isGrouping) {
+        if (this.key && this.config) { // if (this.key&&!this.isGrouping) {
             Key = PRE + "\tkey '" + this.key + "';\r\n";
         }
         //else{
