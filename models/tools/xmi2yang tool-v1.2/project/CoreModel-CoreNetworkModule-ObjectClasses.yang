@@ -1,5 +1,5 @@
 module CoreModel-CoreNetworkModule-ObjectClasses {
-    namespace 'urn:onf:CoreModel-CoreNetworkModule-ObjectClasses';
+    namespace "urn:onf:CoreModel-CoreNetworkModule-ObjectClasses";
     prefix CoreModel-CoreNetworkModule-ObjectClasses;
     import CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages {
         prefix CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages;

@@ -43,7 +43,7 @@ Node.prototype.buildChild = function (att, type) {
             t=att.type;
         }
         switch(t){
-            case "integer":att.type="uint32";
+            case "integer":att.type="uint64";
                 break;
             default:break;
         }
@@ -133,7 +133,7 @@ Node.prototype.writeNode = function (layer) {
         if (this["max-elements"] == "*") {
             maxele = "";
         }
-        if (this.key && this.config) { // if (this.key&&!this.isGrouping) {
+        if (this.key && this.config) {
             Key = PRE + "\tkey '" + this.key + "';\r\n";
         }
         //else{
