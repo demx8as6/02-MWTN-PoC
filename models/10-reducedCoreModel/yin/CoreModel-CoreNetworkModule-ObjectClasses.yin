@@ -19,10 +19,10 @@
     <ordered-by value="system"/>
     <uses name="CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages:GlobalClass"/>
     <list name="networkElementRefList">
-      <key value="uuid"/>
       <description>
         <text>The network elements within the scope of the NCD where each NE is within one and only one domain.</text>
       </description>
+      <key value="uuid"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="NetworkElement"/>
@@ -32,12 +32,12 @@
     <status value="deprecated"/>
     <uses name="CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages:GlobalClass"/>
     <list name="ltpRefList">
-      <key value="uuid"/>
       <description>
         <text>An NE has associated LTPs that are at its boundary.
 The NeEncompassesFd association occurs for FDs that are within the bounds of the NetworkElement definition such that the FD is bounded by LTPs, all of which are on the boundary of the NetworkElement or are within the NetworkElement. 
 An LTP can be independent of an NE.</text>
       </description>
+      <key value="uuid"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="LogicalTerminationPoint"/>
@@ -99,10 +99,10 @@ Note the cleint LTP association should provide all necessary detail hence this a
       </type>
     </leaf-list>
     <list name="lpList">
-      <key value="layerProtocolName"/>
       <description>
         <text>Ordered list of LayerProtocols that this LTP is comprised of where the first entry in the list is the lowest server layer (e.g. physical)</text>
       </description>
+      <key value="layerProtocolName"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="LayerProtocol"/>

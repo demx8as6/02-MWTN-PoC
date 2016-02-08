@@ -10,10 +10,10 @@
   </import>
   <grouping name="Name">
     <list name="nameList">
-      <key value="globalClassRef"/>
       <description>
         <text>List of names.</text>
       </description>
+      <key value="valueName"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="NameAndValue"/>
@@ -26,12 +26,12 @@
     <uses name="Extension"/>
     <uses name="CoreModel-CoreFoundationModule-StateModel:State_Pac"/>
     <list name="localIdList">
-      <key value="globalClassRef"/>
       <description>
         <text>An identifier that is unique in the context of some scope that is less than the global scope.
 
 (consider in the context of Identifier: A property of an entity/role with a value that is unique within an identifier space, where the identifier space is itself unique, and immutable. The identifier therefore represents the identity of the entity/role. An identifier carries no semantics with respect to the purpose of the entity.)</text>
       </description>
+      <key value="valueName"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="NameAndValue"/>
@@ -51,12 +51,12 @@
     <uses name="Extension"/>
     <uses name="CoreModel-CoreFoundationModule-StateModel:State_Pac"/>
     <list name="localIdList">
-      <key value="globalClassRef"/>
       <description>
         <text>An identifier that is unique in the context of some scope that is less than the global scope.
 
 (consider in the context of Identifier: A property of an entity/role with a value that is unique within an identifier space, where the identifier space is itself unique, and immutable. The identifier therefore represents the identity of the entity/role. An identifier carries no semantics with respect to the purpose of the entity.)</text>
       </description>
+      <key value="valueName"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="NameAndValue"/>
@@ -65,10 +65,10 @@
   </grouping>
   <grouping name="Label">
     <list name="labelList">
-      <key value="globalClassRef"/>
       <description>
         <text>List of labels.</text>
       </description>
+      <key value="valueName"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="NameAndValue"/>
@@ -76,10 +76,10 @@
   </grouping>
   <grouping name="Extension">
     <list name="extensionList">
-      <key value="globalClassRef"/>
       <description>
         <text>List of simple name-value extentions</text>
       </description>
+      <key value="valueName"/>
       <config value="true"/>
       <ordered-by value="system"/>
       <uses name="NameAndValue"/>
