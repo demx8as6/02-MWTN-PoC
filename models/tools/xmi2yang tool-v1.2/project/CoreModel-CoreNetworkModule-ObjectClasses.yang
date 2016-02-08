@@ -14,8 +14,8 @@ module CoreModel-CoreNetworkModule-ObjectClasses {
         ordered-by system;
         uses CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages:GlobalClass;
         list networkElementRefList {
-            key 'uuid';
             description "The network elements within the scope of the NCD where each NE is within one and only one domain.";
+            key 'uuid';
             config true;
             ordered-by system;
             uses NetworkElement;
@@ -25,10 +25,10 @@ module CoreModel-CoreNetworkModule-ObjectClasses {
         status deprecated;
         uses CoreModel-CoreFoundationModule-SuperClassesAndCommonPackages:GlobalClass;
         list ltpRefList {
-key "uuid";
             description "An NE has associated LTPs that are at its boundary.
 The NeEncompassesFd association occurs for FDs that are within the bounds of the NetworkElement definition such that the FD is bounded by LTPs, all of which are on the boundary of the NetworkElement or are within the NetworkElement. 
 An LTP can be independent of an NE.";
+            key 'uuid';
             config true;
             ordered-by system;
             uses LogicalTerminationPoint;
@@ -78,8 +78,8 @@ Note the cleint LTP association should provide all necessary detail hence this a
             }
         }
         list lpList {
-key "layerProtocolName";
             description "Ordered list of LayerProtocols that this LTP is comprised of where the first entry in the list is the lowest server layer (e.g. physical)";
+            key 'layerProtocolName';
             config true;
             ordered-by system;
             uses LayerProtocol;
