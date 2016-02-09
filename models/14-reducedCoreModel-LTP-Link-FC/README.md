@@ -1,5 +1,5 @@
 # Reduced Core Model  
-For the second ONF MWTN PoC the ONF Core Model 1.1 is reduced to focus on the important ObjectClases and to avoid unnecessary (less important) error analysis.
+There is no need to support the ForwardingConstruct in the 2. OTN MWTN PoC. However here is a reduced ONF Core Model, which includes the object classes for the Forwarding Consturct (FC).
 
 ## Status
 Ongoing: Generated YANG files are not valid according to pyang 1.6.
