@@ -1,3 +1,4 @@
 # 02-MWTN-PoC
-Repository for the second ONF microwave transport network (MWTN) proof of concept (PoC). 
-Sooner or later this repository should be merged/added to https://github.com/OpenNetworkingFoundation/CENTENNIAL.
+Initial repository for the 2. ONF microwave transport network (MWTN) proof of concept (PoC) hosted by Telefonica Germany end of April 2016. 
+The contribution to this repository ended.
+Please follow: https://github.com/OpenNetworkingFoundation/CENTENNIAL/tree/master/02-MWTN-PoC 
